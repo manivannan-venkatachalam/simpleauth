@@ -10,7 +10,7 @@ app.use(express.json());
 
 //connectio for mongodb
 
-mongoose.connect('mongodb://localhost:27017/test_auth');
+mongoose.connect('mongodb+srv://Mani:Mani@123@cluster0.ildam.mongodb.net/simple_auth?retryWrites=true&w=majority');
 const con= mongoose.connection;
 try{
     con.on('open',() => {
