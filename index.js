@@ -30,7 +30,7 @@ res.send("<h1>welcome to Simple Auth<h1>")
 })
 
 
-app.listen(process.env.portnum,(err)=>{
+app.listen(process.env.portnum || 500,(err)=>{
     if(err){
         console.log("error in listening")
     }
