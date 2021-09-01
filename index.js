@@ -10,7 +10,7 @@ app.use(express.json());
 
 //connectio for mongodb
 
-mongoose.connect('mongodb+srv://Hari:Hari@cluster0.ildam.mongodb.net/simple_auth?retryWrites=true&w=majority');
+mongoose.connect(process.env.MONGODBURI);
 const con= mongoose.connection;
 try{
     con.on('open',() => {
